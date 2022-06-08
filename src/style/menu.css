@@ -1,0 +1,45 @@
+.wrapper-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 100vh;
+    margin: 20px 40px 0 40px;
+}
+
+.card-container{
+    width: 328px;
+    height: 368px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.card-h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    color: #000;
+ }
+
+ .card-description{
+    font-size: 18px;
+    color: gray;
+    margin-top: 8px;
+}
+
+
+button.card-btn{
+    width: 64px;
+    height: 48px;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+img{
+    width: 320px;
+    height: 220px;
+}
