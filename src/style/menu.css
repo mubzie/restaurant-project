@@ -1,19 +1,20 @@
 .wrapper-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 20px;
     height: 100vh;
-    margin: 20px 40px 0 40px;
+    margin: 80px 40px 0 40px;
 }
 
 .card-container{
     width: 328px;
-    height: 368px;
+    height: 376px;
     background-color: #fff;
     padding: 10px;
 }
 
 .card-h1{
+    margin-top: 8px;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase; 

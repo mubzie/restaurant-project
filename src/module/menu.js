@@ -8,9 +8,6 @@ const menu = () => {
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-container');
 
-    // const cardImage = document.createElement('img')
-    // cardImage.src = "../images/card.jpg";
-
     const cardImage = new Image();
     cardImage.src = card;
 
@@ -27,9 +24,9 @@ const menu = () => {
     button.textContent = '$400'
 
     cardContainer.appendChild(cardImage);
-    cardContainer.appendChild(h1)
-    cardContainer.appendChild(para)
-    cardContainer.appendChild(button)
+    cardContainer.appendChild(h1);
+    cardContainer.appendChild(para);
+    cardContainer.appendChild(button);
 
     wrapperContainer.appendChild(cardContainer);
 
@@ -37,4 +34,12 @@ const menu = () => {
 
 }
 
-export { menu }
+const cardMenu = () => {
+    menu();
+    menu();
+    menu();
+    menu();
+    menu();
+}
+
+export { cardMenu }

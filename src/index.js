@@ -1,6 +1,6 @@
 import navBar from './header';
 import { homePage } from './module/home';
-import { menu } from './module/menu';
+import { cardMenu } from './module/menu';
 
 const render = () => {
     // const bodyContainer = document.getElementById('#content');
@@ -8,7 +8,7 @@ const render = () => {
 
     bodyContainer.appendChild(navBar());
     // bodyContainer.appendChild(homePage());
-    bodyContainer.appendChild(menu())
+    bodyContainer.appendChild(cardMenu());
 
     return bodyContainer;
 }

@@ -21,14 +21,8 @@ const homePage = () => {
     textContainer.appendChild(h1);
     textContainer.appendChild(para);
 
-    // const pictureContainer = document.createElement('div');
-    // pictureContainer.classList.add('img-placeholder');
-    // const foodImg = new Image();
-    // foodImg.src = food;
-    // pictureContainer.appendChild(foodImg) 
 
     mainContainer.appendChild(textContainer);
-    // mainContainer.appendChild(pictureContainer);
 
     return mainContainer;
 }
