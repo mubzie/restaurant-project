@@ -1,22 +1,23 @@
 import './header.css'
 
+
 const navBar = () => {
     const createDiv = document.createElement('div')
     createDiv.classList.add('header');
 
-    const navList = document.createElement('div');
+    const navList = document.createElement('ul');
     navList.classList.add('nav');
 
-    const homeBtn = document.createElement('button');
-    homeBtn.classList.add('header');
+    const homeBtn = document.createElement('li');
+    homeBtn.classList.add('nav-list');
     homeBtn.textContent = 'Home';
 
-    const menuBtn = document.createElement('button');
-    menuBtn.classList.add('header');
+    const menuBtn = document.createElement('li');
+    menuBtn.classList.add('nav-list');
     menuBtn.textContent = 'Menu';
 
-    const aboutBtn = document.createElement('button');
-    aboutBtn.classList.add('header');
+    const aboutBtn = document.createElement('li');
+    aboutBtn.classList.add('nav-list');
     aboutBtn.textContent = 'About us';
 
     navList.appendChild(homeBtn);
@@ -28,4 +29,6 @@ const navBar = () => {
     return createDiv;
 }
 
-export default navBar;
+
+
+export { navBar };

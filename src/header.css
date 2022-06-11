@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     display: flex;
@@ -20,13 +30,19 @@ body{
     align-items: center;
 }
 
-button.header{
+li.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 48px;
-    font-size: 24px;
+    padding: 8px;
+    font-family: 'Inter';
+    font-size: 18px;
     font-weight: 500;
     background-color: #000;
     color: #fff;
     border: none;
+    border-radius: 30px;
     cursor: pointer;
 }

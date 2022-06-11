@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+ 
+.wrapper-container-about{
+    margin: 44px 0 44px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+}
+
+.info-text{
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 48px;
+    color: #ff0000;
+}
+
+.chef-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.chef-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.chef-sm-page{
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+img{
+    width: 600px;
+    /* height: 220px;
+    max-width:100%; */
+    height:auto;
+}
+
+.h1-about{
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase; 
+    color: #25282B;
+ }
+
+.para-about{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    color: #25282B;
+    margin-top: 0;
+}
+
+button.about{
+    font-family: 'Inter';
+    font-weight: 500;
+    width: 88px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}

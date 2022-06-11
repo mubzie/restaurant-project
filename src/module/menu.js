@@ -34,12 +34,4 @@ const menu = () => {
 
 }
 
-const cardMenu = () => {
-    menu();
-    menu();
-    menu();
-    menu();
-    menu();
-}
-
-export { cardMenu }
+export { menu }

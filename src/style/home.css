@@ -1,21 +1,31 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
 body{
-    /* height: 100vh; */
+    height: 100vh;
+    /* width: 100vw; */
     background: url('../images/food.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-body > img{
-filter: contrast(50%);
 }
 
 .main-container{
     margin-top: 100px;
     margin-left: 40px;
     margin-right: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-container{
@@ -26,18 +36,35 @@ filter: contrast(50%);
 }
 
 .h1{
+   font-family: 'Inter';
+   font-weight: 900;
    font-size: 64px;
-   font-weight: 700;
    text-transform: uppercase; 
-   color: #fff;
+   color: #ff0000;
 }
 
 .para{
+    font-family: 'Inter';
+    font-weight: 900;
     font-size: 24px;
-    color: #E8E8E8;
+    color: #000;
+    margin-top: 24px;
 }
 
+.menu-btn{
+    margin-top: 44px;
+    width: 220px;
+    height: 48px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
-img{
+/* img{
     filter: contrast(50%);
-}
+} */
