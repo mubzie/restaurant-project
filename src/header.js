@@ -29,6 +29,4 @@ const navBar = () => {
     return createDiv;
 }
 
-
-
 export { navBar };

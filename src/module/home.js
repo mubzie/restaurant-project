@@ -4,7 +4,7 @@ import food from '../images/food.jpg';
 
 const homePage = () => {
 
-    const content = document.querySelector('#content');
+    // const content = document.querySelector('#content');
 
     const mainContainer = document.createElement('div');
     mainContainer.classList.add('main-container');
@@ -29,8 +29,11 @@ const homePage = () => {
 
     mainContainer.appendChild(textContainer);
     mainContainer.appendChild(MenuBtn);
+
+    // content.appendChild(mainContainer);
     
     return mainContainer;
+
 }
 
 export { homePage };

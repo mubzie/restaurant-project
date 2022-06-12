@@ -8,7 +8,7 @@ const render = () => {
     const bodyContainer = document.createElement('div');
 
     bodyContainer.appendChild(navBar());
-    bodyContainer.appendChild(homePage());
+    // bodyContainer.appendChild(homePage());
     // bodyContainer.appendChild(menu());
     // bodyContainer.appendChild(aboutUs());
 
