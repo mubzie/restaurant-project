@@ -1,18 +1,57 @@
-import { navBar }  from './header';
+// import { navBar }  from './header';
 import { homePage } from './module/home';
 import { menu } from './module/menu';
 import { aboutUs } from './module/about';
 
-const render = () => {
-    // const bodyContainer = document.getElementById('#content');
-    const bodyContainer = document.createElement('div');
+const navBar = () => {
 
-    bodyContainer.appendChild(navBar());
-    // bodyContainer.appendChild(homePage());
-    // bodyContainer.appendChild(menu());
-    // bodyContainer.appendChild(aboutUs());
+    const createDiv = document.createElement('div')
+    createDiv.classList.add('header');
 
-    return bodyContainer;
+    const navList = document.createElement('ul');
+    navList.classList.add('nav');
+
+    const homeBtn = document.createElement('li');
+    homeBtn.classList.add('nav-list');
+    homeBtn.textContent = 'Home';
+
+    homeBtn.addEventListener('click', (e) => {
+        document.body.appendChild(homePage());
+    })
+
+    const menuBtn = document.createElement('li');
+    menuBtn.classList.add('nav-list');
+    menuBtn.textContent = 'Menu';
+
+    menuBtn.addEventListener('click', () => {
+        document.body.appendChild(menu());
+    })
+
+    const aboutBtn = document.createElement('li');
+    aboutBtn.classList.add('nav-list');
+    aboutBtn.textContent = 'About us';
+
+    aboutBtn.addEventListener('click', () => {
+        if(aboutBtn) {
+            document.body.appendChild(aboutUs());
+            return;
+        }
+    })
+
+    navList.append(homeBtn, menuBtn, aboutBtn);
+
+    createDiv.appendChild(navList);
+
+    return createDiv;
 }
 
-document.body.appendChild(render());
+// const render = () => {
+
+//     const bodyContainer = document.createElement('div');
+
+//     bodyContainer.append(navBar(), homePage(), menu(), aboutUs());
+
+//     return bodyContainer;
+// }
+
+document.body.append(navBar(), homePage());
