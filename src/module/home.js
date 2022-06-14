@@ -1,10 +1,6 @@
-import navBar from "../header";
 import '../style/home.css'
-import food from '../images/food.jpg';
 
 const homePage = () => {
-
-    // const content = document.querySelector('#content');
 
     const mainContainer = document.createElement('div');
     mainContainer.classList.add('main-container');
@@ -24,13 +20,9 @@ const homePage = () => {
     MenuBtn.classList.add('menu-btn');
     MenuBtn.textContent = "check our menu";
 
-    textContainer.appendChild(h1);
-    textContainer.appendChild(para);
+    textContainer.append(h1, para);
 
-    mainContainer.appendChild(textContainer);
-    mainContainer.appendChild(MenuBtn);
-
-    // content.appendChild(mainContainer);
+    mainContainer.append(textContainer, MenuBtn);
     
     return mainContainer;
 

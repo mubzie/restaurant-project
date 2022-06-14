@@ -2,6 +2,9 @@
 import { homePage } from './module/home';
 import { menu } from './module/menu';
 import { aboutUs } from './module/about';
+import './header.css'
+
+// let home = document.querySelector('.text-container');
 
 const navBar = () => {
 
@@ -15,28 +18,30 @@ const navBar = () => {
     homeBtn.classList.add('nav-list');
     homeBtn.textContent = 'Home';
 
-    homeBtn.addEventListener('click', (e) => {
-        document.body.appendChild(homePage());
-    })
+    //the eventListener for home page
+    // homeBtn.addEventListener('click', (e) => {
+    //     document.body.appendChild(homePage());
+    // })
 
     const menuBtn = document.createElement('li');
     menuBtn.classList.add('nav-list');
     menuBtn.textContent = 'Menu';
 
-    menuBtn.addEventListener('click', () => {
-        document.body.appendChild(menu());
-    })
+    //the eventListener for menu page
+    // menuBtn.addEventListener('click', () => {
+    //     // home.textContent = " ";
+    //     document.body.appendChild(menu());
+        
+    // })
 
     const aboutBtn = document.createElement('li');
     aboutBtn.classList.add('nav-list');
     aboutBtn.textContent = 'About us';
 
-    aboutBtn.addEventListener('click', () => {
-        if(aboutBtn) {
-            document.body.appendChild(aboutUs());
-            return;
-        }
-    })
+    //the eventListener for about page
+    // aboutBtn.addEventListener('click', () => {
+     
+    // })
 
     navList.append(homeBtn, menuBtn, aboutBtn);
 

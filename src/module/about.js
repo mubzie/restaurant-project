@@ -42,19 +42,13 @@ const aboutUs = () => {
     linkedinBtn.classList.add('about');
     linkedinBtn.textContent = 'linkedin';
 
-    chefInfo.appendChild(chefName);
-    chefInfo.appendChild(chefDetails);
+    chefInfo.append(chefName, chefDetails);
 
-    chefSocialMediaPage.appendChild(twitterBtn);
-    chefSocialMediaPage.appendChild(youtubeBtn);
-    chefSocialMediaPage.appendChild(linkedinBtn);
+    chefSocialMediaPage.append(twitterBtn, youtubeBtn, linkedinBtn);
 
-    chefContainer.appendChild(chefImage);
-    chefContainer.appendChild(chefInfo);
-    chefContainer.appendChild(chefSocialMediaPage);
+    chefContainer.append(chefImage, chefInfo, chefSocialMediaPage);
 
-    wrapperContainer.appendChild(infoText);
-    wrapperContainer.appendChild(chefContainer);
+    wrapperContainer.append(infoText, chefContainer);
 
     return wrapperContainer;
 
