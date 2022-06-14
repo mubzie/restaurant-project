@@ -4,8 +4,6 @@ import { menu } from './module/menu';
 import { aboutUs } from './module/about';
 import './header.css'
 
-// let home = document.querySelector('.text-container');
-
 const navBar = () => {
 
     const createDiv = document.createElement('div')
@@ -19,29 +17,31 @@ const navBar = () => {
     homeBtn.textContent = 'Home';
 
     //the eventListener for home page
-    // homeBtn.addEventListener('click', (e) => {
-    //     document.body.appendChild(homePage());
-    // })
+    homeBtn.addEventListener('click', () => {
+        content.innerHTML = " ";
+        document.body.appendChild(homePage());
+    })
 
     const menuBtn = document.createElement('li');
     menuBtn.classList.add('nav-list');
     menuBtn.textContent = 'Menu';
 
     //the eventListener for menu page
-    // menuBtn.addEventListener('click', () => {
-    //     // home.textContent = " ";
-    //     document.body.appendChild(menu());
+    menuBtn.addEventListener('click', () => {
+        content.innerHTML = " ";
+        document.body.appendChild(menu());
         
-    // })
+    })
 
     const aboutBtn = document.createElement('li');
     aboutBtn.classList.add('nav-list');
     aboutBtn.textContent = 'About us';
 
     //the eventListener for about page
-    // aboutBtn.addEventListener('click', () => {
-     
-    // })
+    aboutBtn.addEventListener('click', () => {
+     content.innerHTML = " ";
+     document.body.appendChild(aboutUs());
+    })
 
     navList.append(homeBtn, menuBtn, aboutBtn);
 
@@ -49,14 +49,5 @@ const navBar = () => {
 
     return createDiv;
 }
-
-// const render = () => {
-
-//     const bodyContainer = document.createElement('div');
-
-//     bodyContainer.append(navBar(), homePage(), menu(), aboutUs());
-
-//     return bodyContainer;
-// }
 
 document.body.append(navBar(), homePage());

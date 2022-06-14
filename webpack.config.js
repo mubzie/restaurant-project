@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -26,8 +26,9 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Restaurant',
-    }),
+    // new HtmlWebpackPlugin({
+    //   title: 'Restaurant',
+    //   // template: './src/template.html',
+    // }),
   ],
 };

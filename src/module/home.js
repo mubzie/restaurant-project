@@ -2,8 +2,8 @@ import '../style/home.css'
 
 const homePage = () => {
 
-    const mainContainer = document.createElement('div');
-    mainContainer.classList.add('main-container');
+    const mainContainer = document.getElementById('content');
+    mainContainer.classList.add('content');
 
     const textContainer = document.createElement('div');
     textContainer.classList.add('text-container');

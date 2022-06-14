@@ -6,7 +6,7 @@ import card3 from '../images/card3.jpg'
 
 const menu = () => {
 
-    const wrapperContainer = document.createElement('div');
+    const wrapperContainer = document.getElementById('content');
     wrapperContainer.classList.add('wrapper-container');
 
     const cardContainer1 = document.createElement('div');

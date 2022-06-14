@@ -3,7 +3,7 @@ import chef from '../images/chef.png'
 
 const aboutUs = () => {
 
-    const wrapperContainer = document.createElement('div');
+    const wrapperContainer = document.getElementById('content');
     wrapperContainer.classList.add('wrapper-container-about');
 
     const infoText = document.createElement('div');
