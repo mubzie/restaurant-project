@@ -1,5 +1,5 @@
 import '../style/about.css'
-import chef from '../images/chef.png'
+import chef from '../images/chef.jpg'
 
 const aboutUs = () => {
 
@@ -27,11 +27,11 @@ const aboutUs = () => {
 
     const chefName = document.createElement('div');
     chefName.classList.add('h1-about');
-    chefName.textContent = 'Mubarak Rabiu';
+    chefName.textContent = 'Mabel Amar';
 
     const chefDetails = document.createElement('div');
     chefDetails.classList.add('para-about');
-    chefDetails.textContent = 'tbh, i am the agba cooker you\'ve been hearing about'
+    chefDetails.textContent = 'Chef mabel amar has always loved the culinary arts, a talent she inherited from her family, who already succeeded in the restaurant business. While Chef mabel initially went to college for business, she quickly decided that she had to pursue what she was naturally gifted at, make sauce.'
 
     const chefSocialMediaPage = document.createElement('div');
     chefSocialMediaPage.classList.add('chef-sm-page');

@@ -13,9 +13,9 @@
 .wrapper-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 20px;
-    /* height: 100vh; */
+    gap: 40px;
     margin: 80px 40px 40px 40px;
+    justify-items: center;
 }
 
 .card-container{
@@ -23,6 +23,7 @@
     height: 416px;
     background-color: #fff;
     padding: 10px;
+    border: 2px solid #000;
     border-radius: 8px;
 }
 

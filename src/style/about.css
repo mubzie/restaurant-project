@@ -54,6 +54,7 @@
 img.about-us-img{
     width: 400px;
     height: 400px;
+    border-radius: 8px;
 }
 
 .h1-about{
@@ -67,7 +68,8 @@ img.about-us-img{
 .para-about{
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 1.6;
     color: #25282B;
     margin-top: 0;
 }
@@ -79,10 +81,10 @@ button.about{
     height: 40px;
     font-size: 16px;
     font-weight: 500;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 8px;
-    border: none;
+    border: 2px solid #000;
     border-radius: 30px;
     cursor: pointer;
 }

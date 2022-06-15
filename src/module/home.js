@@ -16,11 +16,11 @@ const homePage = () => {
     
     const para = document.createElement('div');
     para.classList.add('para');
-    para.textContent = "Your home of tasty meal and beautiful experience. We call it taste with a smile 😀.";
+    para.textContent = "Your home of tasty meal and beautiful experience. I call it taste with a smile 😀.";
 
     const MenuBtn = document.createElement('button');
     MenuBtn.classList.add('menu-btn');
-    MenuBtn.textContent = "check our menu";
+    MenuBtn.textContent = "make sure you check the menu";
 
     textContainer.append(h1, para);
 
