@@ -2,8 +2,10 @@ import '../style/home.css'
 
 const homePage = () => {
 
-    const mainContainer = document.getElementById('content');
-    mainContainer.classList.add('content');
+    const wrapperContainer = document.getElementById('content');
+
+    const mainContainer = document.createElement('div');
+    mainContainer.classList.add('main-container');
 
     const textContainer = document.createElement('div');
     textContainer.classList.add('text-container');
@@ -23,8 +25,10 @@ const homePage = () => {
     textContainer.append(h1, para);
 
     mainContainer.append(textContainer, MenuBtn);
+
+    wrapperContainer.appendChild(mainContainer);
     
-    return mainContainer;
+    return wrapperContainer;
 
 }
 

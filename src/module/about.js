@@ -4,7 +4,9 @@ import chef from '../images/chef.png'
 const aboutUs = () => {
 
     const wrapperContainer = document.getElementById('content');
-    wrapperContainer.classList.add('wrapper-container-about');
+
+    const mainContainer = document.createElement('div');
+    mainContainer.classList.add('wrapper-container-about');
 
     const infoText = document.createElement('div');
     infoText.classList.add('info-text');
@@ -48,7 +50,9 @@ const aboutUs = () => {
 
     chefContainer.append(chefImage, chefInfo, chefSocialMediaPage);
 
-    wrapperContainer.append(infoText, chefContainer);
+    mainContainer.append(infoText, chefContainer);
+
+    wrapperContainer.appendChild(mainContainer);
 
     return wrapperContainer;
 

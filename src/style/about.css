@@ -11,10 +11,10 @@
 }
  
 .wrapper-container-about{
-    margin: 44px 0 44px 0;
+    margin: 32px 0 44px 0;
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 44px;
     align-items: center;
 }
 

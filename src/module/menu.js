@@ -7,7 +7,9 @@ import card3 from '../images/card3.jpg'
 const menu = () => {
 
     const wrapperContainer = document.getElementById('content');
-    wrapperContainer.classList.add('wrapper-container');
+
+    const mainContainer = document.createElement('div');
+    mainContainer.classList.add('wrapper-container');
 
     const cardContainer1 = document.createElement('div');
     cardContainer1.classList.add('card-container');
@@ -69,7 +71,9 @@ const menu = () => {
 
     cardContainer3.append(cardImage3, h1_3, para_3, button_3);
 
-    wrapperContainer.append(cardContainer1, cardContainer2, cardContainer3);
+    mainContainer.append(cardContainer1, cardContainer2, cardContainer3);
+
+    wrapperContainer.appendChild(mainContainer);
 
     return wrapperContainer;
 
