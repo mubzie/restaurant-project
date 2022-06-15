@@ -22,7 +22,6 @@ const aboutUs = () => {
     const chefInfoContainer = document.createElement('div');
     chefInfoContainer.classList.add('chef-info-container');
 
-
     const chefInfo = document.createElement('div');
     chefInfo.classList.add('chef-info');
 
@@ -55,7 +54,6 @@ const aboutUs = () => {
 
     chefInfoContainer.append(chefInfo, chefSocialMediaPage);
 
-    // chefContainer.append(chefImage, chefInfo, chefSocialMediaPage);
     chefContainer.append(chefImage, chefInfoContainer);
 
     mainContainer.append( chefContainer);

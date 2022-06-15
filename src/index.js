@@ -15,11 +15,15 @@ const navBar = () => {
     const homeBtn = document.createElement('li');
     homeBtn.classList.add('nav-list');
     homeBtn.textContent = 'Home';
+    homeBtn.classList.add('nav-list-active');
 
     //the eventListener for home page
     homeBtn.addEventListener('click', () => {
         content.innerHTML = " ";
         document.body.appendChild(homePage());
+        homeBtn.classList.toggle('nav-list-active');
+        menuBtn.classList.remove('nav-list-active');
+        aboutBtn.classList.remove('nav-list-active');
     })
 
     const menuBtn = document.createElement('li');
@@ -30,17 +34,22 @@ const navBar = () => {
     menuBtn.addEventListener('click', () => {
         content.innerHTML = " ";
         document.body.appendChild(menu());
-        
+        homeBtn.classList.remove('nav-list-active');
+        menuBtn.classList.toggle('nav-list-active');
+        aboutBtn.classList.remove('nav-list-active');
     })
 
     const aboutBtn = document.createElement('li');
     aboutBtn.classList.add('nav-list');
-    aboutBtn.textContent = 'About us';
+    aboutBtn.textContent = 'About me';
 
     //the eventListener for about page
     aboutBtn.addEventListener('click', () => {
-     content.innerHTML = " ";
-     document.body.appendChild(aboutUs());
+         content.innerHTML = " ";
+         document.body.appendChild(aboutUs());
+         homeBtn.classList.remove('nav-list-active');
+         menuBtn.classList.remove('nav-list-active');
+         aboutBtn.classList.toggle('nav-list-active');
     })
 
     navList.append(homeBtn, menuBtn, aboutBtn);
