@@ -11,7 +11,7 @@
 }
  
 .wrapper-container-about{
-    margin: 32px 0 44px 0;
+    margin: 80px 0 40px 0;
     display: flex;
     flex-direction: column;
     gap: 44px;
@@ -21,35 +21,41 @@
 .info-text{
     font-family: 'Inter';
     font-weight: 900;
-    font-size: 48px;
+    font-size: 32px;
     color: #ff0000;
 }
 
 .chef-container{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    gap: 24px;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 40px 0 40px;
+}
+
+.chef-info-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .chef-info{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 8px;
 }
 
 .chef-sm-page{
     display: flex;
     gap: 16px;
-    margin-top: 16px;
+    margin-top: 32px;
 }
 
-img{
-    width: 600px;
+img.about-us-img{
+    width: 400px;
     /* height: 220px;
     max-width:100%; */
-    height:auto;
+    height: 400px;
 }
 
 .h1-about{

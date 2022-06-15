@@ -8,15 +8,20 @@ const aboutUs = () => {
     const mainContainer = document.createElement('div');
     mainContainer.classList.add('wrapper-container-about');
 
-    const infoText = document.createElement('div');
-    infoText.classList.add('info-text');
-    infoText.textContent = 'Meet Our Chef';
+    // const infoText = document.createElement('div');
+    // infoText.classList.add('info-text');
+    // infoText.textContent = 'Meet Our Chef';
 
     const chefContainer = document.createElement('div');
     chefContainer.classList.add('chef-container');
 
     const chefImage = new Image();
+    chefImage.classList.add('about-us-img');
     chefImage.src = chef;
+
+    const chefInfoContainer = document.createElement('div');
+    chefInfoContainer.classList.add('chef-info-container');
+
 
     const chefInfo = document.createElement('div');
     chefInfo.classList.add('chef-info');
@@ -48,9 +53,12 @@ const aboutUs = () => {
 
     chefSocialMediaPage.append(twitterBtn, youtubeBtn, linkedinBtn);
 
-    chefContainer.append(chefImage, chefInfo, chefSocialMediaPage);
+    chefInfoContainer.append(chefInfo, chefSocialMediaPage);
 
-    mainContainer.append(infoText, chefContainer);
+    // chefContainer.append(chefImage, chefInfo, chefSocialMediaPage);
+    chefContainer.append(chefImage, chefInfoContainer);
+
+    mainContainer.append( chefContainer);
 
     wrapperContainer.appendChild(mainContainer);
 
