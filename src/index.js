@@ -6,7 +6,7 @@ import './header.css'
 
 const navBar = () => {
 
-    const createDiv = document.createElement('div')
+    const createDiv = document.createElement('div');
     createDiv.classList.add('header');
 
     const navList = document.createElement('ul');
