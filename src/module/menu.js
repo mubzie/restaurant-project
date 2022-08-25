@@ -2,6 +2,7 @@ import '../style/menu.css'
 import card from '../images/card.jpg'
 import card2 from '../images/card2.jpg'
 import card3 from '../images/card3.jpg'
+import food from '../images/food.jpg'
 
 
 const menu = () => {
@@ -35,7 +36,7 @@ const menu = () => {
     cardContainer2.classList.add('card-container');
 
     const cardImage2 = new Image();
-    cardImage2.src = card2;
+    cardImage2.src = food;
 
     const h1_2 = document.createElement('div');
     h1_2.classList.add('card-h1')
