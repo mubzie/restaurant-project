@@ -21,7 +21,7 @@ const navBar = () => {
     homeBtn.addEventListener('click', () => {
         content.innerHTML = " ";
         document.body.appendChild(homePage());
-        homeBtn.classList.toggle('nav-list-active');
+        homeBtn.classList.add('nav-list-active');
         menuBtn.classList.remove('nav-list-active');
         aboutBtn.classList.remove('nav-list-active');
     })
@@ -35,7 +35,7 @@ const navBar = () => {
         content.innerHTML = " ";
         document.body.appendChild(menu());
         homeBtn.classList.remove('nav-list-active');
-        menuBtn.classList.toggle('nav-list-active');
+        menuBtn.classList.add('nav-list-active');
         aboutBtn.classList.remove('nav-list-active');
     })
 
@@ -45,11 +45,11 @@ const navBar = () => {
 
     //the eventListener for about page
     aboutBtn.addEventListener('click', () => {
-         content.innerHTML = " ";
-         document.body.appendChild(aboutUs());
-         homeBtn.classList.remove('nav-list-active');
-         menuBtn.classList.remove('nav-list-active');
-         aboutBtn.classList.toggle('nav-list-active');
+        content.innerHTML = " ";
+        document.body.appendChild(aboutUs());
+        homeBtn.classList.remove('nav-list-active');
+        menuBtn.classList.remove('nav-list-active');
+        aboutBtn.classList.add('nav-list-active');
     })
 
     navList.append(homeBtn, menuBtn, aboutBtn);

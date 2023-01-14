@@ -16,18 +16,15 @@ body{
 
 .header{
     margin: 0;
-    width: auto;
-    height: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 24px 60px;
 }
 
 .nav{
+    margin: 0;
     display: flex;
     gap: 48px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 li.nav-list{
@@ -35,8 +32,7 @@ li.nav-list{
     justify-content: center;
     align-items: center;
     width: 120px;
-    height: 48px;
-    padding: 8px;
+    padding: 16px;
     font-family: 'Inter';
     font-size: 18px;
     font-weight: 500;
@@ -55,4 +51,18 @@ li.nav-list:hover{
 li.nav-list-active{
     background-color: #000;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 24px;
+    }
+
+    .nav{
+        gap: 24px;
+    }
+
+    li.nav-list {
+        font-size: 16px;
+    }
 }

@@ -2,49 +2,37 @@
     font-family: 'Inter';
     src: url('../fonts/Inter-Bold.ttf') format('truetype');
     font-weight: 700;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter-Regular.ttf') format('truetype');
     font-weight: 500;
-  }
+}
 
 .wrapper-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 40px;
-    margin: 80px 40px 40px 40px;
-    justify-items: center;
+    margin: 80px 24px 40px 24px;
 }
 
 .card-container{
-    width: 380px;
-    height: 416px;
+    height: auto;
     background-color: #fff;
     padding: 10px;
     border: 2px solid #000;
     border-radius: 8px;
 }
 
-.card-h1{
-    font-family: 'Inter';
-    font-weight: 700;
-    margin-top: 8px;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase; 
-    color: #25282B;
- }
 
- .card-description{
-     font-family: 'Inter';
-     font-weight: 500;
+.card-description{
+    font-family: 'Inter';
+    font-weight: 500;
     font-size: 18px;
     color: #52575C;
     margin-top: 8px;
 }
-
 
 button.card-btn{
     font-family: 'Inter';
